@@ -1,0 +1,15 @@
+# Temporary files
+/tmp/hardwifi_*
+*.log
+sc_portal/requests.log
+
+# Sensitive info
+sc_portal/credenziali.txt
+sc_portal/credentials.txt
+
+# Binary/Misc
+*.pyc
+__pycache__/
+*.cap
+*.pcapng
+*.hc22000
