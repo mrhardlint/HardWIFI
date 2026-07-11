@@ -1292,7 +1292,7 @@ select_wordlist() {
     echo -e "       ${GREEN}MENU SELEZIONE DIZIONARI & PATTERN ITALIANI${NC}"
     echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo -e "1) RockYou.txt (Standard)"
-    echo -e "2) WPA-ITA-SUPER.txt (106MB - Consigliato)"
+    echo -e "2) WPA-ITA-ULTRA.txt (6MB - Consigliato)"
     echo -e "3) Dizionario Italiano Comune (Nomi, Date, Sport)"
     echo -e "4) TIM/Telecom (Smart Pattern Alfanumerico)"
     echo -e "5) Vodafone (Smart Pattern Hex)"
@@ -1304,7 +1304,7 @@ select_wordlist() {
 
     case "$wl_choice" in
         1) WORDLIST="/usr/share/wordlists/rockyou.txt" ;;
-        2) WORDLIST="/home/itan/.gemini/antigravity/scratch/hardwifi/WPA-ITA-SUPER.txt" ;;
+        2) WORDLIST="/home/itan/.gemini/antigravity/scratch/hardwifi/WPA-ITA-ULTRA.txt" ;;
         3) 
             WORDLIST="/tmp/hardwifi_ita_common.txt"
             if [[ ! -f "$WORDLIST" ]]; then
